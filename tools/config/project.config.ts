@@ -13,10 +13,13 @@ export class ProjectConfig extends SeedConfig {
 
   constructor() {
     super();
-    // this.APP_TITLE = 'Put name of your app here';
+    this.APP_TITLE = 'FoodDiary 0.0.0.1';
     let additional_deps: InjectableDependency[] = [
       // {src: 'jquery/dist/jquery.min.js', inject: 'libs'},
       // {src: 'lodash/lodash.min.js', inject: 'libs'},
+      {src: 'office-ui-fabric/dist/css/fabric.components.min.css', inject: true},
+      {src: 'office-ui-fabric/dist/css/fabric.min.css', inject: true},
+      {src: 'angular2-notifications/components', inject: 'lib'}
     ];
 
     const seedDependencies = this.NPM_DEPENDENCIES;
